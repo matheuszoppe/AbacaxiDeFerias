@@ -1,0 +1,454 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: #f79fb2;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.top a{
+    text-decoration: none;
+}
+
+.top h1{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    text-align: left;
+    padding-right: 15vw;
+}
+.top .home{
+    display: flex;
+    align-items: center;
+  
+}
+.top p{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    text-decoration: none;
+}
+.top .home img{
+    height: 10vh;
+    padding-right: 15px;
+}
+.receitas{
+    display: flex;
+    align-items: center;
+}
+
+.receitas img{
+    height: 6vh;
+    padding-left: 15px;
+}
+
+
+
+.kit{
+    font: 700 2.5rem Roboto;
+    color: #2c2c2c ;
+    padding-left: 22vw;
+    padding-top: 15vh;
+}
+.kit1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kit1 img{
+    height: 50vh;
+    margin-right: 15vw;
+}
+.kit1 p{
+    font: 300 1.2rem Roboto;
+    color: #2c2c2c ;
+
+}
+.kit1 h1{
+    font: 700 3rem Roboto;
+    color: #2c2c2c ;
+}
+
+.compra{
+    width: 13vw;
+    height: 8vh;    
+    background-color:  #edc72a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 10px 0;
+    text-decoration: none;
+    font: 700 1.2rem Roboto;
+    color: #ffffff ;
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    
+}
+
+.kit1 .compra img{
+    height: 4vh;
+    margin: 10px;
+    
+}
+
+.faixa{
+    background-color: #62bcdb;
+    width: 100vw;
+    height: 50px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.faixa img{
+    height: 45px;
+}
+.faixa h1{
+    font: 700 1rem Roboto;
+    color: #ffffff ;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.faixa a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.form{
+    background-color:#edc72a;
+    max-width: 70vw;
+    margin-left: 15vw;
+    margin-top: 10vh;
+        
+}
+.form .text-form h1{
+    font: 700 2rem Roboto;
+    color: #ffffff ;
+    margin-left: 20vw;
+    padding-top: 3vh;
+}
+.form .text-form p{
+    font: 700 1.2rem Roboto;
+    color: #ffffff ;
+    margin-left: 19.5vw;
+    padding-top: 0vh;
+}
+
+.itens{
+    display: flex;
+    font: 400 1.2rem Roboto;
+    color: #ffffff ;
+    justify-content: center;
+   
+}
+.itens .coluna1{
+    margin-right: 10vw;
+}
+.itens input{
+    margin-right: 1vw;
+}
+.num{
+    width: 3vw;
+    height: 3vh;
+    background-color: #d9d9d9;
+    margin-top: 2vh;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+
+}
+
+
+.calcular{
+    border: 0 none;
+    background-color: #eb9dae;
+    width: 15vw; 
+    height: 6vh;
+    font: 700 1.2rem Roboto;
+    color: #ffffff ;
+    margin-top: 3vh;
+    margin-left: 12vw;
+    margin-bottom: 5vh;
+    border-radius: 10px 0 10px 0;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3vh;
+    align-content: center;
+    
+   
+}   
+.button div{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    margin-top: 1vh;
+    
+    
+}
+.button div input{
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    height: 5vh;
+    font: 700 1.7rem Roboto;
+    color: #ffffff ;
+    
+
+    background-color: #edc72a;      
+    
+}
+.next{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    background-color:  #62bcdb; 
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 10px 0 10px 0;
+
+    width: 13vw;
+    height: 8vh;
+
+
+}
+
+.ocult{
+    display: none;
+}
+
+.back{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    background-color:  #eb9dae; 
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 10px 0 10px 0;
+
+    width: 13vw;
+    height: 8vh;
+}
+.text-cad{
+    display: flex;
+    justify-content: center;
+
+
+    font: 700 0.9rem Roboto;
+    color: #ffffff ;
+}
+
+.cad{
+    font: 400 1.3rem Roboto;
+    color: #ffffff ;
+    margin-left: 25vh;
+    margin-right: 20vh;
+}
+
+.cad p{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    margin-top: 5vh;
+
+}
+
+.input-cad{
+    background-color: #d9d9d9;
+    margin-top: 2vh;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    height: 4vh;
+}
+.l1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.l1 input{
+    width: 23vw;
+}
+.l2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+
+}
+.l2 input{
+    width: 23vw;
+}
+.l3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8vh;
+
+}
+.l3 .cel input{
+    width: 18vw;
+}
+.l3 .email input{
+    width: 28vw;
+}
+.l4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+
+}
+.l4 .rua input{
+    width: 40vw;}
+.l4 .numero input{
+    width: 5vw;
+}
+.l5{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+
+}
+.l5 .comple input{
+    width: 25vw;}
+.l5 .bairro input{
+    width: 20vw;
+}
+.l6{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+
+}
+.l6 .cid input{
+    width: 25vw;
+}
+.l6 .cep input{
+    width: 20vw;
+}
+.obs p{
+    font: 400 1rem Roboto;
+    color: #ffffff ;
+    
+
+}
+
+.button2{
+    display: flex;
+    margin: 0 20vh 0 25vh;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+    align-content: center;
+    
+   
+} 
+
+.pag{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    display: none;
+
+}
+.pag h1{
+    font: 700 2rem Roboto;
+    color: #ffffff ;
+    display: flex;
+    justify-content: center;
+}
+.pag p{
+    font: 700 1.6rem Roboto;
+    color: #ffffff ;
+    margin-left: 34vh;
+    
+}
+.tipo{
+    margin-left: 23vw;
+    margin-bottom: 3vh;
+}
+.tipo2{
+    margin-left: 23vw;
+    margin-bottom: 3vh;
+}
+.tipo2 input{
+    margin-bottom: 3vh;
+}
+
+.credito{
+    display: flex;
+    margin-left: 28vw;
+    margin-bottom: 3vh;
+}
+.umavez{
+    margin-right: 20vh;
+}
+ .parc{
+    background-color: #d9d9d9;
+    margin-top: 2vh;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    height: 4vh;
+
+ }
+
+#confirmacao{
+    background-color:#edc72a;
+    max-width: 70vw;
+    margin-left: 15vw;
+    margin-top: 10vh;   
+
+}
+
+#confirmacao .data{
+    font: 700 1.5rem Roboto;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+#confirmacao .titulo{
+    font: 700 1.5rem Roboto;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+#confirmacao .script{
+    font: 400 1.2rem Roboto;
+    color: #ffffff ;
+    margin-left: 15vw;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+}
+#confirmacao .subtitulo{
+    font: 700 1.5rem Roboto;
+    color: #ffffff;
+}
+
+.fim{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    background-color:  #62bcdb; 
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 10px 0 10px 0;
+
+    width: 13vw;
+    height: 8vh;
+    margin-left: 75vh;
+    margin-top: 5vh;
+}
+
+
+
+

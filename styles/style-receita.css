@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: #f79fb2;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.top a{
+    text-decoration: none;
+}
+
+.top h1{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    text-align: left;
+    padding-right: 15vw;
+}
+.top .home{
+    display: flex;
+    align-items: center;
+  
+}
+.top p{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    text-decoration: none;
+}
+.top .home img{
+    height: 10vh;
+    padding-right: 15px;
+}
+.compra{
+    display: flex;
+    align-items: center;
+}
+
+.compra img{
+    height: 6vh;
+    padding-left: 15px;
+}
+
+
+.titulo{
+    font: 700 2.6rem Roboto;
+    color: #2c2c2c ;
+    text-align: center;
+    padding-top: 60px;
+}
+.receitas img{
+    max-width: 100%;
+    display: block;
+}
+
+.receitas{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.receitas div{
+    flex: 1 1 300px;
+    margin: 20px;
+    
+}
+.receitas div p{
+    font: 300 1rem Roboto;
+    color: #2c2c2c ;
+    text-align: center;
+}
+span{
+    font: 300 1rem Roboto;
+    color: #2c2c2c ;
+    opacity: 0;
+    -moz-opacity:0;
+    filter:alpha(opacity=0);
+    margin-left: 20px;
+
+}
+.receitas a{
+    text-decoration: none;
+}
+
+.receitas a:hover span{
+    border: 1px solid f00;
+    opacity:1;
+    -moz-opacity:1;
+    filter:alpha(opacity=100);
+}
+.span1{
+    position: absolute;
+    bottom: 0;
+    top: 250px;
+
+}
+.receitas a:hover img{
+    opacity: 0.3;
+}
+
+.span2{ 
+    position: absolute;
+    bottom: 0;
+    top: 720px;
+    
+}
+
+.faixa{
+    background-color: #62bcdb;
+    width: 100vw;
+    height: 50px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.faixa img{
+    height: 45px;
+}
+.faixa h1{
+    font: 700 1rem Roboto;
+    color: #ffffff ;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.faixa a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

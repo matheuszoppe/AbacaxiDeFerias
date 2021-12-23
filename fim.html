@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/ilustra.png"/>
+    <link rel="stylesheet" href="./styles/style-compra.css">
+
+    <title>Pedido Finalizado</title>
+
+    <script type="text/javascript" src="./js/buttons.js"></script>
+
+</head>
+<body>
+    <div class="top">
+        <a class="home" href="./index.html"><img src="./img/ilustra.png" alt="Ilustrão do abacaxi">
+            <p>Home</p>
+        </a>
+        <a href="./index.html"></a>
+        <h1>O ABACAXI TÁ <br> DE FÉRIAS!</h1></a>
+        <a class="receitas" href="./receitas.html">
+            <p>Receitas</p><img src="./img/study.svg" alt="Icone de um livro">
+        </a>
+    </div>
+    <div class="" id="confirmacao">
+        <p class="titulo">Compra realizada com sucesso! <br>
+            Segue abaixo as informações do seu pedido.<p>
+              
+        <P class="titulo">PEDIDO Nº:</P> 
+        <div class="data">
+            <script >
+                var data = new Date();
+                var dia = data.getDate();
+                var mes = data.getMonth();
+                var ano = data.getFullYear();  
+                var m  
+                switch(mes){
+                    case 0:
+                        m = "Janeiro";
+                        break;
+                    case 1:
+                        m = "Fevereiro";
+                        break;
+                    case 2:
+                        m = "Março";
+                        break;
+                    case 3:
+                        m = "Abril";
+                        break;
+                    case 4:
+                        m = "Maio";
+                        break;
+                    case 5:
+                        m = "Junho";
+                        break;
+                    case 6:
+                        m = "Julho";
+                        break;
+                    case 7:
+                        m = "Agosto";
+                        break;
+                    case 8:
+                        m = "Setembro";
+                        break;
+                    case 9:
+                        m = "Outubro";
+                        break;
+                    case 10:
+                        m = "Novembro";
+                        break;
+                    case 11:
+                        m = "Dezembro";
+                        break;
+                    default:
+                        m = "Erro!"
+                }
+                
+
+
+                document.write(ano+dia+mes+"<br><br>");
+                document.write("Jundiai, " + dia + " de " + m +" de "+ ano);
+                </script>  
+        </div>
+            
+        
+        <div class="script">
+            
+             
+            <p class="subtitulo">Itens Selecionados</p>
+            <script  type="text/javascript">
+                
+
+                if(queryString('item1a')=='on'){
+                    document.write("Abacaxi: " + queryString('item1b') + " un - RS"+queryString('item1b')*5+",00"+ "<br>");
+                }
+                if(queryString('item2a')=='on'){
+                    document.write("Água de Coco: " + queryString('item2b') + " un  - RS"+queryString('item2b')*3+",00"+ "<br>");
+                }
+                if(queryString('item3a')=='on'){
+                    document.write("Hortelã: " + queryString('item3b') + " un  - RS"+queryString('item3b')*2+",00"+ "<br>");
+                }
+                if(queryString('item4a')=='on'){
+                    document.write("Água com Gas: " + queryString('item4b') + " un  - RS"+queryString('item4b')*4+",00"+ "<br>");
+                }
+                if(queryString('item5a')=='on'){
+                    document.write("Leite Condensado: " + queryString('item5b') + " un  - RS"+queryString('item5b')*5+",00"+ "<br>");
+                }
+                if(queryString('item6a')=='on'){
+                    document.write("Mel 300ml: " + queryString('item6b') + " un  - RS"+queryString('item6b')*10+",00"+ "<br>");
+                }
+                if(queryString('item7a')=='on'){
+                    document.write("Abacaxi em Calda: " + queryString('item7b') + " un  - RS"+queryString('item7b')*7+",00"+ "<br>");
+                }
+                if(queryString('item8a')=='on'){
+                    document.write("Limão: " + queryString('item8b') + " un  - RS"+queryString('item8b')*3+",00"+ "<br>");
+                }
+                if(queryString('item9a')=='on'){
+                    document.write("Vodka 100ml: " + queryString('item9b') + " un  - RS"+queryString('item9b')*25+",00"+ "<br>");
+                }
+                if(queryString('item10a')=='on'){
+                    document.write("Rum 100ml: " + queryString('item10b') + " un  - RS"+queryString('item10b')*25+",00"+ "<br>");
+                }
+                if(queryString('item11a')=='on'){
+                    document.write("Jurupinga 100ml: " + queryString('item11b') + " un  - RS"+queryString('item11b')*8+",00"+ "<br>");
+                }
+                if(queryString('item12a')=='on'){
+                    document.write("Copo Personalizado: " + queryString('item12b') + " un  - RS"+queryString('item12b')*10+",00"+ "<br>");
+                }
+                
+            </script>
+            <p class="subtitulo">Dados Pessoais</p>
+            <script  type="text/javascript">
+                
+                document.write(queryString('nome') + " " + queryString('sobrenome')+"<br>");
+                document.write("RG: " + queryString('rg') + "<br>CPF: " +queryString('cpf') + "<br>");
+                document.write("Celular: " + queryString('cel') + "<br>E-mail: " + queryString('email').replace("%40","@") + "<br>");
+
+            </script>
+            <p class="subtitulo">Dados Entrega</p>
+            <script  type="text/javascript">
+                document.write("Rua: " + queryString('rua').replaceAll("+"," ") + " - Nº: " +queryString('numero') + "<br>");
+                if(queryString('complemento') == undefined){
+                    document.write("Complemento: " + "<br>Bairro: " +queryString('bairro').replaceAll("+"," ") + "<br>");
+                }else{
+                    document.write("Complemento: " + queryString('complemento').replaceAll("+"," ") + "<br>Bairro: " +queryString('bairro').replaceAll("+"," ") + "<br>");
+                }
+                document.write("Cidade: " + queryString('cidade').replaceAll("+"," ") + "<br>CEP: " +queryString('cep') + "<br>");
+            
+            </script>
+            <p class="subtitulo">Pagamento</p>
+            <script  type="text/javascript">
+                
+                
+                document.write("Forma de Pagamento: " + queryString('pagamento').replace("%C3%A9","é") + "<br>")
+                
+                document.write("Valor Total: R$ " + queryString('tot') + ",00 <br>")
+                var parcela =parseInt(queryString('tot'))/ parseFloat(queryString('parcela'));
+                if(queryString('pagamento') == 'Cr%C3%A9dito'){
+                document.write("Parcelas: " + parseInt(parcela) +"X de " + queryString('parcela') + "<br>");
+                }
+                
+
+                
+            </script>
+            <p><br> Deixe um comentario sobre a sua experiência! <br>
+                Assim podemos melhorar sempre!</p>
+            <textarea name="" id="" cols="80" rows="5"></textarea>
+            <input type="button" class="fim" value="Fim" onclick="window.location.href = './index.html'">
+        </div>
+        
+    </div>
+    
+</body>
+</html>

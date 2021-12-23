@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/ilustra.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style-compra.css">
+
+    <title>Kits do Abacaxi</title>
+   
+    <script type="text/javascript" src="./js/buttons.js"></script>
+    <script type="text/javascript" src="./js/itens.js"></script>
+    <script type="text/javascript" src="./js/pagamento.js"></script>
+
+    
+</head>
+
+<body>
+    <div class="top">
+        <a class="home" href="./index.html"><img src="./img/ilustra.png" alt="Ilustrão do abacaxi">
+            <p>Home</p>
+        </a>
+        <a href="./index.html"></a>
+        <h1>O ABACAXI TÁ <br> DE FÉRIAS!</h1></a>
+        <a class="receitas" href="./receitas.html">
+            <p>Receitas</p><img src="./img/study.svg" alt="Icone de um livro">
+        </a>
+    </div>
+
+    <h1 class="kit">
+        Kit Suco nosso de cada dia!
+    </h1>
+    <div class="kit1">
+        <img src="./img/box1.png" alt="Ilustração de uma caixa">
+        <div class="texto">
+            <p>
+                Aqui você pode montar um kit do seu jeito! <br>
+                <br>
+                Recrie nossas receita ou crie as suas.
+            </p>
+            
+            <input type="button" class="compra" value="Montar Kit" onclick="ocultar('perso')">
+            
+        </div>
+    </div>
+    
+    
+    <div class="form">
+        <form class="formulario" name="formu" action="./fim.html" onsubmit="return finalizar('pag')">
+            <div id="perso" class="ocult">
+                <div class="text-form">
+                    <h1>Vamos personalizar seu Kit??</h1>
+                    <p>Aqui você pode adicionar e excluir itens do seu Kit. <br>
+                        E assim montar um kit, totalmente personalizado!!</p>
+                </div>
+                <div class="itens">
+                    <div class="coluna1">
+                        <input type="checkbox" name="item1a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" name="item1b" value="">Abacaxi - R$ 5,00
+                        <br><input type="checkbox" name="item2a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" value="" name="item2b">Água de Coco 330ml- R$ 3,00
+                        <br><input type="checkbox" name="item3a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" value=""name="item3b">Hortelã - R$ 2,00
+                        <br><input type="checkbox" name="item4a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" value=""name="item4b">Água com Gas 355ml- R$ 4,00
+                        <br><input type="checkbox" name="item5a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" value=""name="item5b">Leite Condensado - R$ 5,00
+                        <br><input type="checkbox" name="item6a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" value="" name="item6b">Mel 300ml - R$ 10,00
+                    </div>
+                    <div>
+                        <input type="checkbox" name="item7a"onclick=" mudarQuantidade()"><input class="num" type="number" min="1" name="item7b">Abacaxi em Calda - R$ 7,00
+                        <br><input type="checkbox" name="item8a"onclick=" mudarQuantidade()"><input class="num" type="number" min="1" name="item8b">Limão 5un - R$ 3,00
+                        <br><input type="checkbox" name="item9a"onclick=" mudarQuantidade()"><input class="num" type="number" min="1" name="item9b">Vodka 100ml - R$ 25,00
+                        <br><input type="checkbox" name="item10a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" name="item10b">Rum 100ml - R$ 25,00
+                        <br><input type="checkbox" name="item11a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" name="item11b">Jurupinga 100ml - R$ 8,00
+                        <br><input type="checkbox" name="item12a" onclick="mudarQuantidade()"><input class="num" type="number" min="1" name="item12b">Copo Pesonalizado - R$ 10,00
+
+                    </div>
+
+                </div>
+                <input type="button" class="calcular" name="calcular" value="Calcular Valor do Kit" onclick="soma()">
+                <div class="button">
+                   <div> 
+                        Valor Total: R$ <input type="text" name="tot" class="total" value="00" readonly>
+                   </div>
+                    <input type="button" class="next" value="Proximo" onclick="soma(), nextItens('cadastro', 'perso')">
+                </div>
+
+            </div>
+            <div id="cadastro" class="ocult">
+                <div class="text-cad">
+                    <h1>Agora vamos precisar de algumas informações!</h1>
+                    
+                </div>
+                
+               <div class="cad">
+                <p class="part2">Dados Pessoais</p>
+                   <div class="l1">
+                       <div>
+                        Nome* <br>
+                        <input class="input-cad" type="text"  name="nome" id="nome">
+                       </div>
+                       <div>Sobrenome* <br>
+                        <input class="input-cad" type="text"  name="sobrenome" id="sobrenome"></div>
+                    
+                   </div>
+                    
+                    <div class="l2">
+                        <div>Rg* <br>
+                            <input class="input-cad" type="number" size="11" maxlength="11"  name="rg" id="rg"></div>
+                        <div>CPF* <br>
+                            <input class="input-cad" type="number"  name="cpf" id="cpf"></div>
+                                                
+                    </div>
+                    <div class="l3">
+                        <div class="cel">Cel* <br>
+                            <input class="input-cad" type="number" name="cel" id="cel"></div>
+                        <div class="email">E-mail* <br>
+                            <input class="input-cad" type="email"  name="email" id="email"></div>                      
+                    </div>
+                    <p class="part2">Dados de Entrega</p>
+                    <div class="l4">
+                        <div class="rua">Rua* <br>
+                            <input class="input-cad" type="text"  name="rua" id="rua"></div>
+                        <div class="numero">Nº* <br>
+                            <input class="input-cad" type="number"  name="numero" id="numero"></div>                      
+                    </div>
+                    <div class="l5">
+                        <div class="comple">Complemento <br>
+                            <input class="input-cad" name="complemento" type="text"></div>
+                        <div class="bairro">Bairro* <br>
+                            <input class="input-cad" type="text"  name="bairro" id="bairro"></div>                      
+                    </div>
+                    <div class="l6">
+                        <div class="cid">Cidade* <br>
+                            <input class="input-cad" type="text" name="cidade" id="cidade"></div>
+                        <div class="cep">Cep* <br>
+                            <input class="input-cad" type="number" name="cep" id="cep"></div>                      
+                    </div>
+                    <div class="obs">
+                        <p>*Campos obrigatórios</p>
+                    </div>
+               </div>
+                <div class="button2">
+                    <input type="button" class="back" value="Voltar" onclick="back('perso', 'cadastro')">
+                    
+                     <input type="button" class="next" value="Proximo" onclick="nextCadastro('pag', 'cadastro')">
+                 </div>
+
+
+
+            </div>
+            <div id="pag" class="pag">
+                <h1>Agora só falta definir o pagamento!</h1>
+                <div>
+                    <script>
+                        conf();
+                        
+                        
+                    </script>
+                </div>
+
+                <p>Formas de Pagamento</p>
+                <div class="tipo">
+                    <input type="radio" value="Crédito"  name="pagamento" onclick="parcelas()"> Cartão de Crédito
+                </div>
+                
+                <div class="credito">
+                    <select name="parcela" id="parcela" class="parc">
+                        
+                    </select>
+                </div>
+                <div class="tipo2">
+                    <input class="deb" type="radio" value="Débito" name="pagamento"> Cartão de Débito <br>
+                    <input class="bole" type="radio" value="Boleto" name="pagamento"> Boleto
+                </div>  
+                
+                <div class="button2">
+                    <input type="button" class="back" value="Voltar" onclick="back('cadastro', 'pag')">
+                    
+                     <input type="submit" class="next" value="Finalizar" onclick="test()">
+                 </div>
+
+                
+
+            </div>
+        </form>
+    </div>
+    
+
+   
+
+
+
+    <div class="faixa"><a href="./index.html"><img src="./img/ilustra.png" alt="Ilustrão do abacaxi">
+            <h1>O ABACAXI TÁ <br> DE FÉRIAS!</h1>
+        </a></div>
+
+
+</body>
+
+</html>

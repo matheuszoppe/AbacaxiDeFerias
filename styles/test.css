@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: #f79fb2;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.top a{
+    text-decoration: none;
+}
+
+.top h1{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    text-align: left;
+    padding-right: 15vw;
+}
+.top .home{
+    display: flex;
+    align-items: center;
+  
+}
+.top p{
+    font: 700 1.5rem Roboto;
+    color: #ffffff ;
+    text-decoration: none;
+}
+.top .home img{
+    height: 10vh;
+    padding-right: 15px;
+}
+.compra{
+    display: flex;
+    align-items: center;
+}
+
+.compra img{
+    height: 6vh;
+    padding-left: 15px;
+}
+
+
+.titulo{
+    font: 700 2.6rem Roboto;
+    color: #2c2c2c ;
+    text-align: center;
+    padding-top: 60px;
+}
+.receitas img{
+    max-width: 100%;
+    
+}
+
+.receitas{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.receitas div{
+    flex: 1 1 300px;
+    margin: 20px;
+    
+}
+.receitas div p{
+    font: 300 1rem Roboto;
+    color: #2c2c2c ;
+    text-align: center;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1;
+}
+.grid a{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.grid p{
+    grid-row: 0;
+}
+
+
+
+
